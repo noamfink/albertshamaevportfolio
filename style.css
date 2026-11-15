@@ -47,7 +47,9 @@ em{font-family:var(--serif);font-style:italic;font-weight:400}
   padding:18px var(--pad);transition:background .4s var(--ease),padding .4s var(--ease);mix-blend-mode:normal}
 .nav.scrolled{background:rgba(15,15,15,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding-top:12px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.06)}
 .mark{font-family:var(--serif);font-size:26px;letter-spacing:-.02em;line-height:1}
-.mark span{color:var(--accent);margin:0 1px}
+.mark img{height:34px;width:auto}
+.foot-logo{height:28px;width:auto;opacity:.8}
+.foot{align-items:center}
 .nav-links{display:flex;gap:34px}
 .nav-links a{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--fog);position:relative;transition:color .3s}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
