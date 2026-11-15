@@ -1,5 +1,5 @@
 /* ==========================================================
-   Albert Shamaev — Portfolio · content + interactions
+   Albert Shamaev, Portfolio · content + interactions
    Photography is served from Albert's existing image CDN.
    ========================================================== */
 const wix = (id, w = 1600) =>
@@ -9,7 +9,7 @@ const wix = (id, w = 1600) =>
 const FILMS = [
   {
     slug: "bellavista", name: "BellaVista Milano", cat: "Eyewear", dur: "0:23",
-    desc: "“True luxury doesn't shout.” Espresso on a cliffside terrace, a vintage convertible along the coast, low sun through the windshield — quiet Italian luxury, art-directed frame by frame.",
+    desc: "“True luxury doesn't shout.” Espresso on a cliffside terrace, a vintage convertible along the coast, low sun through the windshield. Quiet Italian luxury, art-directed frame by frame.",
     tags: ["Concept", "Look development", "Generative video", "Edit", "Typography"]
   },
   {
@@ -19,12 +19,12 @@ const FILMS = [
   },
   {
     slug: "aurasync", name: "AuraSync", cat: "Audio", dur: "0:35",
-    desc: "“Sound that moves with you.” A day-in-the-life spot — morning ritual, city streets, the running track — with one consistent character carried across every scene.",
+    desc: "“Sound that moves with you.” A day-in-the-life spot that follows one consistent character from a morning ritual to city streets to the running track.",
     tags: ["Narrative", "Character consistency", "Generative video", "VO & captions", "Edit"]
   },
   {
     slug: "solea", name: "Soléa", cat: "Skincare", dur: "0:21",
-    desc: "A social-first beauty ad blending a creator-style, to-camera testimonial with sunlit macro product shots among olive trees — the language of UGC with a premium finish.",
+    desc: "A social-first beauty ad blending a creator-style, to-camera testimonial with sunlit macro product shots among olive trees. The language of UGC with a premium finish.",
     tags: ["UGC format", "Generative video", "Lip-sync & captions", "Product macro", "Edit"]
   }
 ];
@@ -44,7 +44,7 @@ const KEYZAR = [
 
 /* ---------- OCTOBER 7 ---------- */
 const OCTOBER = [
-  ["a25983_7d5a4c2f8bea410fbf916aa3e07e43a6~mv2.jpg", "Teddy bear on a Tel Aviv bench — for the kidnapped children"],
+  ["a25983_7d5a4c2f8bea410fbf916aa3e07e43a6~mv2.jpg", "Teddy bear on a Tel Aviv bench for the kidnapped children"],
   ["a25983_cdc0df4f073847dcb099ada55e686c1d~mv2.jpg", "Hostage Square, Tel Aviv"],
   ["a25983_08998a1f77974c0598edd534ee714595~mv2.jpg", "Protest on Dizengoff"],
   ["a25983_579e7171966e4947afc717a50adff593~mv2.jpg", "Empty yellow chairs installation"],
@@ -54,7 +54,7 @@ const OCTOBER = [
   ["a25983_4332019f3bf7418bbe6d7ee5d7276fcf~mv2.jpg", "Soldier on a bench, supply bags"],
   ["a25983_ef9e62196fbf45578725e0e6e561204c~mv2.jpg", "Rothschild Boulevard memorial"],
   ["a25983_9263af54482544218e8a1eca632b7ccc~mv2.jpg", "Night-long vigil, Tel Aviv"],
-  ["a25983_4173be0fcd25499a93666a29577525c9~mv2.jpg", "“Alive” — poster on a Tel Aviv pole"],
+  ["a25983_4173be0fcd25499a93666a29577525c9~mv2.jpg", "“Alive” poster on a Tel Aviv pole"],
   ["a25983_987354223cc94fba8efeda5181c806d5~mv2.jpg", "Merkava IV, Gaza envelope"],
   ["a25983_4c56c2645e7d4ed29dde92f28d759e31~mv2.jpg", "Off-duty soldier at dusk"],
   ["a25983_186dfa979d334b53a4f9b0f80a788dfc~mv2.jpg", "“Our brothers are bringing you home”"]
@@ -64,7 +64,7 @@ const OCTOBER = [
 const SERIES = [
   {
     key: "inner", name: "Inner Mythologies",
-    desc: "Subtle surrealism and symbolic moments — fire, light-painting, water and neon — looking beneath the surface at the personal myths that shape how we feel, move and remember.",
+    desc: "Subtle surrealism and symbolic moments made with fire, light-painting, water and neon, looking beneath the surface at the personal myths that shape how we feel, move and remember.",
     items: [
       ["a25983_ada845dd01fa44cb91ba944c493d15b4~mv2.jpg", "Face engulfed by flame"],
       ["a25983_3f7eacc075b8446d915fc94564e1f3e3~mv2.jpg", "Light-painting arcs"],
@@ -74,13 +74,13 @@ const SERIES = [
       ["a25983_1acf021053e845249fe0200f181a2728~mv2.jpg", "Under magenta neon"],
       ["a25983_63c1647c01194deabda2467b13b8027f~mv2.jpg", "Hands on a teal, rain-soaked window"],
       ["a25983_a528f6f427a34921afd18d5c2f97267b~mv2.jpg", "Behind frosted glass"],
-      ["a25983_86ff88d801be4b3ba53086191647f80c~mv2.jpg", "Descent — underwater"],
+      ["a25983_86ff88d801be4b3ba53086191647f80c~mv2.jpg", "Descent, underwater"],
       ["a25983_6c9bdf825a014bbe96bbc936bbe46330~mv2.jpg", "Inner Mythologies"]
     ]
   },
   {
     key: "fashion", name: "Fashion",
-    desc: "Editorial, campaign and model sessions — movement, attitude and presence held in a single frame.",
+    desc: "Editorial, campaign and model sessions. Movement, attitude and presence held in a single frame.",
     items: [
       ["a25983_be6c5478c89548b084bffbe5f9fb388f~mv2.jpg", "Red blazer, pastel shutters"],
       ["a25983_d2ac6511e7514a8e98efae01ecfdc7bf~mv2.jpg", "Leather coat & red fedora, Tel Aviv"],
@@ -96,7 +96,7 @@ const SERIES = [
   },
   {
     key: "fragments", name: "Fragments of Presence",
-    desc: "Unstaged street photography from Tel Aviv — gestures, postures and fleeting interactions between strangers.",
+    desc: "Unstaged street photography from Tel Aviv: gestures, postures and fleeting interactions between strangers.",
     items: [
       ["a25983_84738b3003924b5eac6bd9e9a47e4b13~mv2.jpg", "Fedora, bicycle, green crate"],
       ["a25983_1c68d2abcb804ccaaf72f63d84ed50e6~mv2.jpg", "Waiting to cross Dizengoff"],
@@ -113,7 +113,7 @@ const SERIES = [
   },
   {
     key: "thailand", name: "Thailand",
-    desc: "A visual diary of light, colour and human presence — temples, rural roads, night fire shows and jungle mist.",
+    desc: "A visual diary of light, colour and human presence across temples, rural roads, night fire shows and jungle mist.",
     items: [
       ["a25983_f294d45c282042198922ebdb6ff54ade~mv2.jpg", "Blessing in a red-gold temple"],
       ["a25983_c21b4e670bfc4bae99396273d615ff68~mv2.jpg", "Monks in saffron robes"],
@@ -143,7 +143,7 @@ FILMS.forEach((f, i) => {
   el.className = "film reveal";
   el.innerHTML = `
     <div class="film-frame">
-      <img src="assets/img/poster-${f.slug}.jpg" alt="${f.name} — still" loading="lazy">
+      <img src="assets/img/poster-${f.slug}.jpg" alt="${f.name} still" loading="lazy">
       <video muted loop playsinline preload="none" src="assets/video/${f.slug}.mp4"></video>
       <span class="film-dur mono">${f.dur}</span>
       <div class="film-play"><b></b><span class="mono">Play with sound</span></div>
@@ -170,7 +170,7 @@ const kg = $("#keyzarGallery");
 KEYZAR.forEach(([id, cls], i) => {
   const fig = document.createElement("figure");
   fig.className = `${cls} reveal`;
-  fig.innerHTML = `<img src="${wix(id, 1400)}" alt="Keyzar Jewelry — campaign image ${i + 1}" loading="lazy">`;
+  fig.innerHTML = `<img src="${wix(id, 1400)}" alt="Keyzar Jewelry campaign image ${i + 1}" loading="lazy">`;
   fig.addEventListener("click", () => openGallery(KEYZAR.map(([id]) => [id, "Keyzar Jewelry"]), i));
   kg.appendChild(fig);
 });
@@ -195,7 +195,7 @@ function showSeries(key) {
   s.items.forEach(([id, cap], i) => {
     const fig = document.createElement("figure");
     fig.style.animationDelay = `${i * 60}ms`;
-    fig.innerHTML = `<img src="${wix(id, 1200)}" alt="${cap} — ${s.name}" loading="lazy"><figcaption>${cap}</figcaption>`;
+    fig.innerHTML = `<img src="${wix(id, 1200)}" alt="${cap}, ${s.name}" loading="lazy"><figcaption>${cap}</figcaption>`;
     fig.addEventListener("click", () => openGallery(s.items, i));
     grid.appendChild(fig);
   });
@@ -223,12 +223,12 @@ function render() {
     v.src = `assets/video/${f.slug}.mp4`; v.controls = true; v.autoplay = true; v.playsInline = true;
     v.poster = `assets/img/poster-${f.slug}.jpg`;
     stage.appendChild(v);
-    cap.textContent = `${pad(idx + 1)} — ${f.name} · ${f.cat}`;
+    cap.textContent = `${pad(idx + 1)} · ${f.name} · ${f.cat}`;
   } else {
     const [id, c] = list[idx];
     const img = new Image(); img.src = wix(id, 2000); img.alt = c;
     stage.appendChild(img);
-    cap.textContent = `${pad(idx + 1)} / ${pad(list.length)} — ${c}`;
+    cap.textContent = `${pad(idx + 1)} / ${pad(list.length)} · ${c}`;
   }
 }
 function open() { lb.classList.add("open"); lb.setAttribute("aria-hidden", "false"); document.body.style.overflow = "hidden"; render(); }
