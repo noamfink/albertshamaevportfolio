@@ -60,6 +60,8 @@ em{font-family:var(--serif);font-style:italic;font-weight:400}
 .nav-cta::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
 .nav-cta:hover{color:var(--bone)}
 .nav-cta:hover::after{transform:scaleX(1)}
+.nav-actions{display:flex;align-items:center;gap:28px}
+.nav-cta i{width:4px;height:4px;border-radius:50%;background:var(--accent)}
 
 /* ---------- HERO ---------- */
 .hero{position:relative;height:100svh;min-height:620px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--pad) clamp(40px,7vh,90px)}
