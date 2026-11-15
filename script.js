@@ -63,19 +63,20 @@ const OCTOBER = [
 /* ---------- PHOTOGRAPHY SERIES ---------- */
 const SERIES = [
   {
-    key: "inner", name: "Inner Mythologies",
-    desc: "Subtle surrealism and symbolic moments made with fire, light-painting, water and neon, looking beneath the surface at the personal myths that shape how we feel, move and remember.",
+    key: "fragments", name: "Fragments of Presence",
+    desc: "Unstaged street photography from Tel Aviv: gestures, postures and fleeting interactions between strangers.",
     items: [
-      ["a25983_ada845dd01fa44cb91ba944c493d15b4~mv2.jpg", "Face engulfed by flame"],
-      ["a25983_3f7eacc075b8446d915fc94564e1f3e3~mv2.jpg", "Light-painting arcs"],
-      ["a25983_483c1401d02e4967a8b25fe96b3c7dbd~mv2.jpg", "Steel-wool ring over water"],
-      ["a25983_07e173fd52dd407aadd868dbe331b619~mv2.jpg", "Red laser fractal portrait"],
-      ["a25983_34a996b4f0c343479921cc80f758d935~mv2.jpg", "Meditation before a neon doorway"],
-      ["a25983_1acf021053e845249fe0200f181a2728~mv2.jpg", "Under magenta neon"],
-      ["a25983_63c1647c01194deabda2467b13b8027f~mv2.jpg", "Hands on a teal, rain-soaked window"],
-      ["a25983_a528f6f427a34921afd18d5c2f97267b~mv2.jpg", "Behind frosted glass"],
-      ["a25983_86ff88d801be4b3ba53086191647f80c~mv2.jpg", "Descent, underwater"],
-      ["a25983_6c9bdf825a014bbe96bbc936bbe46330~mv2.jpg", "Inner Mythologies"]
+      ["a25983_84738b3003924b5eac6bd9e9a47e4b13~mv2.jpg", "Fedora, bicycle, green crate"],
+      ["a25983_1c68d2abcb804ccaaf72f63d84ed50e6~mv2.jpg", "Waiting to cross Dizengoff"],
+      ["a25983_bced3fe18023432ba679a122dbfa0051~mv2.jpg", "Yellow raincoat, hailing a taxi"],
+      ["a25983_a2270dbdc998418e884364ae137eeb43~mv2.jpg", "Above the Bauhaus rooftops"],
+      ["a25983_8bf26ffa554a411ea4c2b6ea78c64d88~mv2.jpg", "Busker on Rothschild"],
+      ["a25983_fc5b053a9da74357b730ff167abf68c6~mv2.jpg", "Chairs on a motorcycle"],
+      ["a25983_e772d271ffcc4dc0905a4ae4b624eebe~mv2.jpg", "Reflection, taqueria window"],
+      ["a25983_1262d732bf324b20b984b143164eab59~mv2.jpg", "Concrete"],
+      ["a25983_aed6ee7616cb42abadecd54c300bae22~mv2.jpg", "Lottery, rainy Allenby"],
+      ["a25983_a031acb7255c42ec90ccd19db84ebb04~mv2.jpg", "Rothschild Blvd portrait"],
+      ["a25983_1611856fb9eb4b3f9de525ffe4844b9b~mv2.jpg", "Watching, Dizengoff Square"]
     ]
   },
   {
@@ -92,23 +93,6 @@ const SERIES = [
       ["a25983_35d50006567b4c0d9199bd9409b11e6a~mv2.jpg", "Tire swing, blue sky"],
       ["a25983_80b03aa7772e474d8ad9c89ec94c9a27~mv2.jpg", "Motion under blue stage light"],
       ["a25983_e363dcfaf3204331bdb3cf730dd8f817~mv2.jpg", "Climb"]
-    ]
-  },
-  {
-    key: "fragments", name: "Fragments of Presence",
-    desc: "Unstaged street photography from Tel Aviv: gestures, postures and fleeting interactions between strangers.",
-    items: [
-      ["a25983_84738b3003924b5eac6bd9e9a47e4b13~mv2.jpg", "Fedora, bicycle, green crate"],
-      ["a25983_1c68d2abcb804ccaaf72f63d84ed50e6~mv2.jpg", "Waiting to cross Dizengoff"],
-      ["a25983_bced3fe18023432ba679a122dbfa0051~mv2.jpg", "Yellow raincoat, hailing a taxi"],
-      ["a25983_a2270dbdc998418e884364ae137eeb43~mv2.jpg", "Above the Bauhaus rooftops"],
-      ["a25983_8bf26ffa554a411ea4c2b6ea78c64d88~mv2.jpg", "Busker on Rothschild"],
-      ["a25983_fc5b053a9da74357b730ff167abf68c6~mv2.jpg", "Chairs on a motorcycle"],
-      ["a25983_e772d271ffcc4dc0905a4ae4b624eebe~mv2.jpg", "Reflection, taqueria window"],
-      ["a25983_1262d732bf324b20b984b143164eab59~mv2.jpg", "Concrete"],
-      ["a25983_aed6ee7616cb42abadecd54c300bae22~mv2.jpg", "Lottery, rainy Allenby"],
-      ["a25983_a031acb7255c42ec90ccd19db84ebb04~mv2.jpg", "Rothschild Blvd portrait"],
-      ["a25983_1611856fb9eb4b3f9de525ffe4844b9b~mv2.jpg", "Watching, Dizengoff Square"]
     ]
   },
   {
@@ -207,7 +191,7 @@ SERIES.forEach(s => {
   b.addEventListener("click", () => showSeries(s.key));
   tabs.appendChild(b);
 });
-showSeries("inner");
+showSeries("fragments");
 
 /* ==========================================================
    LIGHTBOX
