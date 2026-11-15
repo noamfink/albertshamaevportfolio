@@ -263,3 +263,35 @@ if (!matchMedia("(hover:hover)").matches) {
 }
 
 $("#yr").textContent = new Date().getFullYear();
+
+/* ==========================================================
+   ANCHOR LINKS: land exactly on the section even while
+   lazy-loaded photos above it are still changing the layout
+   ========================================================== */
+let settleTimer = null;
+const stopSettle = () => { clearInterval(settleTimer); settleTimer = null; };
+["wheel", "touchstart", "keydown"].forEach(ev => addEventListener(ev, stopSettle, { passive: true }));
+
+function goTo(target) {
+  stopSettle();
+  const top = () => Math.max(0, target.getBoundingClientRect().top + scrollY);
+  let last = top();
+  scrollTo({ top: last, behavior: "smooth" });
+  const start = Date.now();
+  settleTimer = setInterval(() => {
+    const now = top();
+    if (Math.abs(now - last) > 2) { last = now; scrollTo({ top: now, behavior: "smooth" }); }
+    if (Date.now() - start > 3000) { stopSettle(); scrollTo({ top: top(), behavior: "auto" }); }
+  }, 120);
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener("click", e => {
+    const id = a.getAttribute("href");
+    const target = id === "#top" ? document.body : document.querySelector(id);
+    if (!target) return;
+    e.preventDefault();
+    history.replaceState(null, "", id);
+    goTo(target);
+  });
+});
