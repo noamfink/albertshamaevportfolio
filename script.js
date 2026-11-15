@@ -275,14 +275,15 @@ const stopSettle = () => { clearInterval(settleTimer); settleTimer = null; };
 function goTo(target) {
   stopSettle();
   const top = () => Math.max(0, target.getBoundingClientRect().top + scrollY);
-  let last = top();
-  scrollTo({ top: last, behavior: "smooth" });
+  let last = top(), stableSince = Date.now();
   const start = Date.now();
+  scrollTo({ top: last, behavior: "smooth" });
   settleTimer = setInterval(() => {
     const now = top();
-    if (Math.abs(now - last) > 2) { last = now; scrollTo({ top: now, behavior: "smooth" }); }
-    if (Date.now() - start > 3000) { stopSettle(); scrollTo({ top: top(), behavior: "auto" }); }
-  }, 120);
+    if (Math.abs(now - last) > 1) { last = now; stableSince = Date.now(); scrollTo({ top: now, behavior: "smooth" }); }
+    const settled = Date.now() - stableSince > 900 && Math.abs(scrollY - Math.min(now, document.documentElement.scrollHeight - innerHeight)) < 2;
+    if (settled || Date.now() - start > 8000) { stopSettle(); scrollTo({ top: top(), behavior: "auto" }); }
+  }, 100);
 }
 
 document.querySelectorAll('a[href^="#"]').forEach(a => {
