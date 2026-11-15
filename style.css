@@ -55,13 +55,11 @@ em{font-family:var(--serif);font-style:italic;font-weight:400}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
 .nav-links a:hover,.nav-links a.active{color:var(--bone)}
 .nav-links a:hover::after,.nav-links a.active::after{transform:scaleX(1)}
-.nav-cta{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:10px;
-  border:1px solid var(--slate);padding:10px 16px;border-radius:100px;transition:border-color .3s,background .3s}
-.nav-actions{display:flex;gap:8px}
-.nav-about{background:var(--bone);color:var(--ink);border-color:var(--bone)}
-.nav-about:hover{background:var(--accent)!important;border-color:var(--accent)!important}
-.nav-cta i{width:6px;height:6px;border-radius:50%;background:var(--accent)}
-.nav-cta:hover{border-color:var(--bone);background:var(--bone);color:var(--ink)}
+.nav-cta{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:8px;
+  color:var(--fog);padding:6px 0;position:relative;transition:color .3s}
+.nav-cta::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+.nav-cta:hover{color:var(--bone)}
+.nav-cta:hover::after{transform:scaleX(1)}
 
 /* ---------- HERO ---------- */
 .hero{position:relative;height:100svh;min-height:620px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--pad) clamp(40px,7vh,90px)}
