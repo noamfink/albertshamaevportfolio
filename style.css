@@ -196,7 +196,7 @@ em{font-family:var(--serif);font-style:italic;font-weight:400}
 .contact-email:hover{color:var(--accent);border-color:var(--accent)}
 .contact-email:hover i{transform:translate(4px,-4px)}
 .contact-title{margin-bottom:clamp(30px,4vw,60px)!important}
-.contact-links{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--graphite)}
+.contact-links{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px;border-top:1px solid var(--graphite)}
 .contact-links a{display:flex;align-items:center;gap:16px;padding:28px 0;font-size:clamp(18px,1.6vw,24px);border-bottom:1px solid var(--graphite);transition:color .3s,padding .4s var(--ease)}
 .contact-links a span{color:var(--ash)}
 .contact-links a i{margin-left:auto;margin-right:22px;font-style:normal;color:var(--ash);transition:transform .4s var(--ease),color .3s}
